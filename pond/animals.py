@@ -6,7 +6,7 @@ class Turtle:
         self.name = name
         self.species = species
         self.date_added = date.today()
-        self.slithering = True
+        self.swimming = True
 
 tim = Turtle("Tim", "box turtle")
 
