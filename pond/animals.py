@@ -2,50 +2,89 @@ from datetime import date
 
 class Turtle:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.swimming = True
+        self.food = food
+    
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
-tim = Turtle("Tim", "box turtle")
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
+
 
 class Duck:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.swimming = True
+        self.food = food
+    
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
-moriah = Duck("Moriah", "mallard")
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
+
 
 class Otter:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.swimming = True
+        self.food = food
 
-patrick = Otter("Patrick", "otter")
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
+
 
 class Catfish:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.swimming = True
+        self.food = food
+    
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
-chuck = Catfish("Chuck", "catfish")
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
+
 
 class Stingray:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.swimming = True
+        self.food = food
 
-steve = Stingray("Steve", "stingray")
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+

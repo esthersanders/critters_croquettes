@@ -1,50 +1,88 @@
 from datetime import date
+
 class Skink:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.slithering = True
+        self.food = food
+    
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
-alex = Skink("Alex", "skink")
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
 
 class Gecko:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.slithering = True
+        self.food = food
+    
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
-greg = Gecko("Greg", "gecko")
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
+
 
 class Iguana:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.slithering = True
+        self.food = food
+    
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
-mary = Iguana("Mary", "iguana")
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
 
 class Boa:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.slithering = True
+        self.food = food
 
-bob = Boa("Bob", "boa")
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
 
-class CornSnake:
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
 
-    def __init__(self, name, species):
+
+
+
+class Cornsnake:
+
+    def __init__(self, name, species, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.slithering = True
+        self.food = food
 
-gabe = CornSnake("Gabe", "corn snake")
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+

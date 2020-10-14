@@ -3,52 +3,89 @@ from datetime import date
 
 class Llama:
 
-    def __init__(self):
+    def __init__(self, name, species, shift, food):
         # Establish the properties of each animal
         # with a default value
-        self.name = ""
-        self.species = ""
+        self.name = name
+        self.species = species
         self.date_added = date.today()
         self.walking = True
+        self.shift = shift
+        self.food = food
 
-miss_fuzz = Llama("Miss_Fuzz", "llama")
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+
 
 class Pig:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
+        self.shift = shift
+        self.food = food
 
-wilbur = Pig("Wilbur", "pot-bellied pig")
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
 
 class Donkey:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
+        self.shift = shift
+        self.food = food
 
-eeyore = Donkey("Eeyore", "donkey")
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+    
+
+
 
 class Rabbit:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
+        self.shift = shift
+        self.food = food
 
-bugs = Rabbit("Bugs", "rabbit")
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
 
 class Goat:
 
-    def __init__(self, name, species):
+    def __init__(self, name, species, shift, food):
         self.name = name
         self.species = species
         self.date_added = date.today()
         self.walking = True
+        self.shift = shift
 
-bonnie = Goat("bonnie", "goat")
+    def feed(self):
+        print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
+
