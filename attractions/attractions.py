@@ -1,29 +1,19 @@
-class PettingZoo:
+class Attraction:
 
-    def __init__(self, name):
+    def __init__(self, name, description):
         self.attraction_name = name
-        self.description = "cute and fuzzy critters to cuddle"
+        self.description = description
         self.animals = list()
 
-    def append(self, animal):
+    def add_animal(self, animal):
         self.animals.append(animal)
 
-class SnakePit:
+    def remove_animal(self, animal):
+        self.animals.remove(animal)
 
-    def __init__(self, name):
-        self.attraction_name = name
-        self.description = "slithery creatures to admire"
-        self.animals = list()
+    def __str__(self):
+        return f'{self.name} ({len(self)} animals)'
 
-    def append(self, animal):
-        self.animals.append(animal)
+    def __len__(self):
+        return len(self.animals)
 
-class Wetlands:
-
-    def __init__(self, name):
-        self.attraction_name = name
-        self.description = "silly swimmers"
-        self.animals = list()
-
-    def append(self, animal):
-        self.animals.append(animal)
